@@ -1,0 +1,94 @@
+En una Universidad la asignatura Introducción a la Computación tiene las siguientes evaluaciones por cada semestre:
+
+a.- Tres exámenes parciales de 27 puntos cada uno.
+b.- Evaluación continua de 9 puntos.
+c.- Un trabajo práctico de 10 puntos.
+
+Se tiene como entrada: Las calificaciones obtenidas por un estudiante, se pide calcular e imprimir. Nota final del estudiante en las escalas de 100 puntos, 20 puntos y 4 puntos respectivamente.
+
+
+
+------------------------------------------------------------------
+
+Clase Alumno
+	Definir nombre como Caracter 
+	Definir cedula como Caracter	
+	Definir Nota_Parcial1 como real
+	Definir Nota_Parcial2 como real
+	Definir Nota_Parcial3 como real
+	Definir Nota_evaluacion_continua como real
+	Definir Nota_trabajo_practico como real
+
+	metodo 
+Fin clase
+
+Algoritmo Universidad
+	definir alumno1 como Alumno
+	definir alumno2 como Alumno
+	definir alumno3 como Alumno
+
+	alumno1 = new Alumno()
+
+		mostrar "Ingrese el nombre del Alumno"
+		Leer alumno1.nombre
+
+		mostrar "Ingrese la cedula del alumno"
+		Leer alumno1.cedula
+
+		mostrar "Ingrese la nota del primer parcial"
+		Leer alumno1.Nota_Parcial1
+
+		mostrar "Ingrese la nota del segundo parcial"
+		Leer alumno1.Nota_Parcial2
+
+		mostrar "Ingrese la nota del tercer parcial"
+		Leer alumno1.Nota_Parcial3
+
+		mostrar "Ingrese la nota de la evaluacion continua"
+		Leer alumno1.Nota_evaluacion_continua
+
+		mostrar "Ingrese la nota del trabajo practico"
+		Leer alumno1.Nota_trabajo_practico
+
+
+		nota_final=(Nota_Parcial1 + Nota_Parcial2 + Nota_Parcial3 + Nota_evaluacion_continua + Nota_trabajo_practico)
+		nota_final_20=nota_final/5
+		nota_final_4=nota_final_20/5
+
+		mostrar "La nota final del estudiante" alumno1.nombre " es: " alumno1.nota_final
+		mostrar "La nota final del estudiante" alumno1.nombre " en la escala de 20 puntos es: " alumno1.nota_final_20
+		mostrar "La nota final del estudiante" alumno1.nombre " en la escala de 4 puntos es: " alumno1.nota_final_4
+
+	alumno2 = new Alumno()
+
+		mostrar "Ingrese el nombre del Alumno"
+		Leer alumno2.nombre
+
+		mostrar "Ingrese la cedula del alumno"
+		Leer alumno2.cedula
+
+		mostrar "Ingrese la nota del primer parcial"
+		Leer alumno2.Nota_Parcial1
+
+		mostrar "Ingrese la nota del segundo parcial"
+		Leer alumno2.Nota_Parcial2
+
+		mostrar "Ingrese la nota del tercer parcial"
+		Leer alumno2.Nota_Parcial3
+
+		mostrar "Ingrese la nota de la evaluacion continua"
+		Leer alumno2.Nota_evaluacion_continua
+
+		mostrar "Ingrese la nota del trabajo practico"
+		Leer alumno2.Nota_trabajo_practico
+
+
+		nota_final=(Nota_Parcial1 + Nota_Parcial2 + Nota_Parcial3 + Nota_evaluacion_continua + Nota_trabajo_practico)
+		nota_final_20=nota_final/5
+		nota_final_4=nota_final_20/5
+
+		mostrar "La nota final del estudiante" alumno2.nombre "es: " alumno2.nota_final
+		mostrar "La nota final del estudiante" alumno2.nombre " en la escala de 20 puntos es: " alumno2.nota_final_20
+		mostrar "La nota final del estudiante" alumno2.nombre " en la escala de 4 puntos es: " alumno2.nota_final_4
+
+Fin algoritmo

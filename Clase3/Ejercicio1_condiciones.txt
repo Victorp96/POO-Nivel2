@@ -1,0 +1,121 @@
+En una Universidad la asignatura Introducción a la Computación tiene las siguientes evaluaciones por cada semestre:
+
+a.- Tres exámenes parciales de 27 puntos cada uno.
+b.- Evaluación continua de 9 puntos.
+c.- Un trabajo práctico de 10 puntos.
+
+Se tiene como entrada: Las calificaciones obtenidas por un estudiante, se pide calcular e imprimir. Nota final del estudiante en las escalas de 100 puntos, 20 puntos y 4 puntos respectivamente.
+
+
+
+------------------------------------------------------------------
+
+Clase Alumno
+	Definir nombre como Caracter 
+	Definir cedula como Caracter	
+	privado Definir Nota_Parcial1 como real
+	privado Definir Nota_Parcial2 como real
+	privado Definir Nota_Parcial3 como real
+	privado Definir Nota_evaluacion_continua como real
+	privado Definir Nota_trabajo_practico como real
+
+	metodo leerDatos()
+		mostrar "Ingrese el nombre del Alumno"
+		Leer nombre
+
+		mostrar "Ingrese la cedula del alumno"
+		Leer cedula
+	fin metodo
+
+	metodo leerNotas()
+		mostrar "Ingrese la nota del primer parcial"
+		Leer Nota_Parcial1
+
+		mostrar "Ingrese la nota del segundo parcial"
+		Leer Nota_Parcial2
+
+		mostrar "Ingrese la nota del tercer parcial"
+		Leer Nota_Parcial3
+
+		mostrar "Ingrese la nota de la evaluacion continua"
+		Leer Nota_evaluacion_continua
+
+		mostrar "Ingrese la nota del trabajo practico"
+		Leer Nota_trabajo_practico
+
+	fin metodo
+
+	metodo ProcesarDatos()
+		nota_final=(Nota_Parcial1 + Nota_Parcial2 + Nota_Parcial3 + Nota_evaluacion_continua + Nota_trabajo_practico)
+		nota_final_20=nota_final/5
+		nota_final_4=nota_final_20/5
+
+	fin metodo
+
+//crear algun metodo que reciba parametros
+	publico metodo mostrarNotas(Nota_Parcial1 ,Nota_Parcial2 , Nota_Parcial3 , Nota_evaluacion_continua ,Nota_trabajo_practico)
+		Promedio=(Nota_Parcial1 + Nota_Parcial2 + Nota_Parcial3 + Nota_evaluacion_continua + Nota_trabajo_practico)/5
+	Fin metodo
+//crear algun metodo que retorne valor
+	publico metodo CalcularPromedio() como real
+
+	Si (promedio >=80) Entonces
+			Mostrar"Aprobado"
+		SiNo
+			Mostrar"Reprobado"
+		FinSi
+		retornar promedio
+	Fin metodo
+
+	metodo mostrarSalidas()
+		mostrar "La nota final del estudiante" nombre " es: " nota_final
+		mostrar "La nota final del estudiante" nombre " en la escala de 20 puntos es: " nota_final_20
+		mostrar "La nota final del estudiante" nombre " en la escala de 4 puntos es: " nota_final_4
+	fin metodo
+Fin clase
+
+
+
+//CUERPO PRINCIPAL
+
+Algoritmo Universidad
+
+	//instanciar objetos
+
+	definir alumno1 como Alumno
+	definir alumno2 como Alumno
+	definir alumno3 como Alumno
+
+	alumno1 = new Alumno()
+	alumno2 = new Alumno()
+	alumno3 = new Alumno()
+
+	Si (Nota_Parcial1==Nota_Parcial2) Entonces
+		Mostrar"Las notas son iguales"
+	SiNo
+		Mostrrar"Las notas son distintas"
+	FinSi
+
+	//datos alumno1
+	alumno1.leerDatos()
+	alumno1.leerNotas()
+	alumno1.ProcesarDatos()
+	alumno1.mostrarSalidas()
+
+	alumno1.mostrarNotas()
+	alumno1.CalcularPromedio()
+
+	//datos alumno2
+	alumno2.leerDatos()
+	alumno2.leerNotas()
+	alumno2.ProcesarDatos()
+	alumno2.mostrarSalidas()
+
+	//datos alumno3
+	alumno3.leerDatos()
+	alumno3.leerNotas()
+	alumno3.ProcesarDatos()
+	alumno3.mostrarSalidas()
+
+
+Fin algoritmo

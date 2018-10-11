@@ -1,0 +1,75 @@
+clase persona
+	privado definir Nombre como caracter
+	privado definir Apellido como caracter
+	privado definir Cedula como caracter
+	privado definir Edad como entero
+	privado definir Nota como entero
+
+//Getters
+	publico metodo getNombre() como caracter
+		retornar Nombre
+	Fin metodo
+
+	publico metodo getApellido() como caracter
+		retornar Apellido
+	Fin metodo
+
+	publico metodo getCedula() como caracter
+		retornar Cedula
+	Fin metodo
+
+	publico metodo getEdad() como entero
+		retornar Edad
+	Fin metodo
+//Setters
+	publico metodo setNombre(nuevo_Nombre como caracter)
+		Nombre=nuevo_Nombre
+	Fin metodo
+
+	publico metodo setApellido(nuevo_Apellido como caracter)
+		Apellido=nuevo_Apellido
+	Fin metodo
+
+	publico metodo setApellido(nueva_Cedula como caracter)
+		Cedula=nueva_Cedula
+	Fin metodo
+
+	publico metodo setEdad(nueva_Edad como entero)
+		Edad=nueva_Edad
+	Fin metodo
+
+	metodo leerDatos()
+		mostrar "Ingrese el nombre del Alumno"
+		Leer nombre
+
+		mostrar "Ingrese la cedula del alumno"
+		Leer cedula
+	fin metodo
+Fin clase
+
+clase promedrio
+	metodo calcularPromedio()
+		para i=1 hasta 5 hacer
+			mostrar "Ingrese la nota:"
+			leer Nota
+			aculador = acumulador + Nota
+		fin para
+		retornar acumulador/5
+	fin metodo
+Fin clase
+
+-----------------------------------------------------
+
+algoritmo GetySet
+
+	definir persona1 como persona
+	definir promedio como promedio
+
+	persona1 = new persona
+	promedrio = new promedio
+
+	mostrar "Ingrese el nombre del Alumno"
+	Leer nuevo_Nombre
+	persona1.getNombre()
+
+Fin algoritmo

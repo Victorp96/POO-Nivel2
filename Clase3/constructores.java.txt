@@ -1,0 +1,42 @@
+Clase libro
+	//Atributos
+	Definir nombre como caracter
+	Definir autor como caracter
+	Definir editorial como caracter
+	Definir cantidad_paginas como entero
+	Definir fecha_publicacion como fecha
+	Definir tipo como caracter
+	Definir ilustrado como logico
+	//constructor por defecto
+	Publico metodo libro()
+		nombre="Calculo diferencial"
+		autor="Jame Stewart"
+		editorial="Planeta"
+		cantidad_paginas=700
+		fecha_publicacion=07/27/1996
+		tipo="Fisico"
+		ilustrado=Verdadero
+
+	Fin metodo
+Fin clase
+
+Clase libro
+	//Atributos
+	Definir nombre como caracter
+	Definir autor como caracter
+	Definir editorial como caracter
+	Definir cantidad_paginas como entero
+	Definir fecha_publicacion como fecha
+	Definir tipo como caracter
+	Definir ilustrado como logico
+	//Constructor por parametros
+	Publico metodo libro(nom, aut, edit, cantidadp, fechapu, tipo, ilust)
+		nombre=nom
+		autor=aut
+		editorial=edit
+		cantidad_paginas=cantp
+		fecha_publicacion=fechpu
+		tipo=tipo
+		ilustrado=ilust
+	Fin metodo
+Fin clase
